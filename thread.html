@@ -1,0 +1,103 @@
+<!-- I have used this tutorial https://youtu.be/Hixx31BX5kY -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlueIT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="top-bar">
+        <h1>
+            BlueIT
+        </h1>
+        <nav>
+            <a href="index.html" aria-label="Main">Threads</a>
+            <a href="support.html" aria-label="Support">Support</a>
+        </nav>
+    </div>
+    <div class="main">
+        <div class="header">
+        </div>
+        <textarea></textarea>
+        <button>Add comment</button>
+        <div class="comments">
+        </div>
+    </div>
+    <script src="data.js"></script>
+    <script>
+        var id = window.location.search.slice(1);
+        var thread = threads.find(t => t.id == id);
+        var header = document.querySelector('.header');
+        var headerHtml = `
+            <h4 class="title">
+                ${thread.title}
+            </h4>
+            <div class="bottom">
+                <p class="timestamp">
+                    ${new Date(thread.date).toLocaleString()}
+                </p>
+                <p class="comment-count">
+                    ${thread.comments.length} comments
+                </p>
+            </div>
+        `
+        header.insertAdjacentHTML('beforeend', headerHtml)
+
+        function addComment(comment) {
+            var commentHtml = `
+                <div class="comment">
+                    <div class="top-comment">
+                        <p class="user">
+                            ${comment.author}
+                        </p>
+                        <p class="comment-ts">
+                            ${new Date(comment.date).toLocaleString()}
+                        </p>
+                    </div>
+                    <div class="comment-content">
+                        ${comment.content}
+                    </div>
+                </div>
+            `
+            comments.insertAdjacentHTML('beforeend', commentHtml);
+        }
+
+        var comments = document.querySelector('.comments');
+        for (let comment of thread.comments) {
+            addComment(comment);
+        }
+
+        var btn = document.querySelector('button');
+        btn.addEventListener('click', function() {
+            var txt = document.querySelector('textarea');
+            var comment = {
+                content: txt.value,
+                date: Date.now(),
+                author: 'Aaron'
+            }
+            addComment(comment);
+            txt.value = '';
+            thread.comments.push(comment);
+            localStorage.setItem('threads', JSON.stringify(threads));
+        })
+        
+    </script>
+
+<footer class="uppercase">
+
+    <span>Social Media:</span>
+
+    <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Find us on Facebook (link opens in a new tab)">Facebook</a>
+    <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Find us on Instagram (link opens in a new tab)">Instagram</a>
+    <a href="https://www.twitter.com" target="_blank" rel="noopener" aria-label="Find us on Twitter (link opens in a new tab)">Twitter</a>
+    <a href="support.html" target="_blank" rel="noopener" aria-label="Find help here">Support</a>
+ 
+    <p>Copyright © Me 2022 🤖</p>
+
+</footer>
+
+</body>
+</html>

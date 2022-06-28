@@ -1,0 +1,64 @@
+<!-- I have used this tutorial https://youtu.be/Hixx31BX5kY -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlueeIT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="top-bar">
+        <h1>
+            BlueIT
+        </h1>
+        <nav class="uppercase">
+            <a href="index.html" aria-label="Main">Threads</a>
+            <a href="support.html" aria-label="Support">Support</a>
+        </nav>
+    </div>
+    <div class="main">
+        <ol>
+        </ol>
+    </div>
+    <script src="data.js"></script>
+    <script>
+        console.log(threads);
+        var container = document.querySelector('ol');
+        for (let thread of threads) {
+            var html = `
+            <li class="row">
+                <a href="/thread.html?${thread.id}">
+                    <h4 class="title">
+                        ${thread.title}
+                    </h4>
+                    <div class="bottom">
+                        <p class="timestamp">
+                            ${new Date(thread.date).toLocaleString()}
+                        </p>
+                        <p class="comment-count">
+                            ${thread.comments.length} comments
+                        </p>
+                    </div>
+                </a>
+            </li>
+            `
+            container.insertAdjacentHTML('beforeend', html);
+        }
+    </script>
+
+<footer class="uppercase">
+
+    <span>Social Media:</span>
+
+    <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Find us on Facebook (link opens in a new tab)">Facebook</a>
+    <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Find us on Instagram (link opens in a new tab)">Instagram</a>
+    <a href="https://www.twitter.com" target="_blank" rel="noopener" aria-label="Find us on Twitter (link opens in a new tab)">Twitter</a>
+    <a href="support.html" target="_blank" rel="noopener" aria-label="Find help here">Support</a>
+ 
+    <p>Copyright © Me 2022 🤖</p>
+
+</footer>
+</body>
+</html>
