@@ -1,4 +1,4 @@
-// I have used this tutorial https://youtu.be/Hixx31BX5kY 
+/// I have used this tutorial https://youtu.be/Hixx31BX5kY 
 var defaultThreads = [
     {
         id: 1,
