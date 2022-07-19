@@ -28,6 +28,13 @@ My website has many featrues like the navigation bar and footer.
 
 ![Phone devices](https://github.com/Kacper015/BlueIT/blob/3e754fba5edcc259dd5fbab21171710d537f589e/Media%20File/BlueIT%20phone%20size%20screen.png)
 
+- __Threads__ 
+  - Threads are used to comment and communicate with others.
+  
+  ![Threads](https://github.com/Kacper015/BlueIT/blob/c8c601575f7cb4dc4aae411d17796e7a5e2795ee/Media%20File/BlueIT%20thread%201%20comments.png)
+  
+  ![Threads commented ](https://github.com/Kacper015/BlueIT/blob/c8c601575f7cb4dc4aae411d17796e7a5e2795ee/Media%20File/BlueIT%20thread%201%20comment%20posted.png)
+
 ### Features Left to Implement
 
 - Register page
