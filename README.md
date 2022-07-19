@@ -21,7 +21,7 @@ My website has many featrues like the navigation bar and footer.
 
   - The footer section includes links to the relevant social media sites for History Time. The links will open to a new tab to allow easy navigation for the user. 
 
-![Footer](hhttps://github.com/Kacper015/BlueIT/blob/3e754fba5edcc259dd5fbab21171710d537f589e/Media%20File/BlueIT%20footer.png)
+![Footer](https://github.com/Kacper015/BlueIT/blob/b36a126858c0b57397327be3c7f5cb760be8a831/Media%20File/BlueIT%20footer.png)
 
 - __Smaller devices__ 
     - BlueIT forum works on smaller devices too without any issues. 
