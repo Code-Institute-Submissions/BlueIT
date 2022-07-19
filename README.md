@@ -27,3 +27,43 @@ My website has many featrues like the navigation bar and footer.
     - BlueIT forum works on smaller devices too without any issues. 
 
 ![Phone devices](https://github.com/Kacper015/BlueIT/blob/3e754fba5edcc259dd5fbab21171710d537f589e/Media%20File/BlueIT%20phone%20size%20screen.png)
+
+### Features Left to Implement
+
+- Register page
+- More threads and feature to add threads yourself 
+- Upvotes and downvotes 
+- Deleting comments
+
+## Validator Testing 
+
+- HTML
+  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fkacper015.github.io%2FBlueIT%2F)
+- CSS
+  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fkacper015.github.io%2FBlueIT%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+
+## Deployment
+
+This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub) 
+
+- The site was deployed to GitHub pages. The steps to deploy are as follows: 
+  - In the GitHub repository, navigate to the Settings tab 
+  - Find Github pages
+  - Select your branch and press save. Your website should be created. 
+
+The live link can be found here - https://kacper015.github.io/BlueIT/
+
+
+## Credits
+
+I have used this tutorial video to help myself - [YouTube ](https://youtu.be/Hixx31BX5kY )
+
+## Media
+ 
+No photos or any media were used.
+
+## Content
+
+I have used this tutorial video to help myself - [YouTube ](https://youtu.be/Hixx31BX5kY )
+
+
